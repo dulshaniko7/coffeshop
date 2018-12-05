@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Hind Madurai', sans-serif; }
+
+.banner {
+  text-align: center;
+  z-index: 3; }
+  .banner__title {
+    color: #bb9457;
+    letter-spacing: .4rem;
+    font-size: 4rem; }
+
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  align-content: center;
+  position: relative; }
+
+h1 {
+  font-size: 10rem; }
+
+.header-font {
+  font-family: 'Caveat', cursive; }
+
+@media screen and (max-width: 780px) {
+  .header {
+    background: url("../img/attractive-bar-barista-296888.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
+  h1 {
+    font-size: 6rem; } }
+
+.navBtn {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  font-size: 3.5rem;
+  color: #bb9457;
+  cursor: pointer;
+  transition: all 1.9s; }
+
+.navBtn:hover {
+  animation-name: popUp;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes popUp {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+@media (min-width: 780px) {
+  .banner__title {
+    font-size: 9rem; } }
+
+.video__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; }
+
+.video__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10rem;
+  background: rgba(187, 148, 87, 0.7);
+  z-index: 3; }
+
+.nav__single-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem 1rem;
+  transition: all .5s;
+  font-family: 'Indie Flower', cursive; }
+
+.nav__single-link:hover {
+  background: #382923;
+  color: white;
+  padding-left: 1.5rem; }
+
+.nav {
+  width: 0;
+  overflow: hidden;
+  transition: all .5s; }
+
+.nav--show {
+  width: 10rem; }
+
+h2 {
+  font-family: 'Dancing Script', cursive; }
+
+.about {
+  margin-top: 6rem; }
+
+.para {
+  font-family: 'Alegreya', serif; }
+
+.res {
+  margin-top: 6rem; }
+
+.photo-container {
+  position: relative; }
+
+.button {
+  position: absolute;
+  left: 50%;
+  top: 50%; }
